@@ -68,10 +68,11 @@ def main():
     summary = SummaryWriter()
     if torch.cuda.is_available():
         agent.cuda()
+        print('cuda on')
     building.empty_building()
     while building.remain_passengers_num == 0 :
-        building.get_passengers(args.add_people_prob)
-        #building.generate_passengers(args.add_people_prob)
+        # building.get_passengers(args.add_people_prob)
+        building.generate_passengers(args.add_people_prob)
     floor_state,elv_state,elv_place_state = building.get_state()
     floor_state,elv_state,elv_place_state = state_preprocessing(args,device,floor_state,elv_state,elv_place_state)
     done = False
@@ -119,8 +120,8 @@ def main():
                 global_step = 0
                 building.empty_building()
                 while building.remain_passengers_num == 0 :
-                    building.get_passengers(args.add_people_prob)     # modified
-                    #building.generate_passengers(args.add_people_prob) # original
+                    # building.get_passengers(args.add_people_prob)     # modified
+                    building.generate_passengers(args.add_people_prob) # original
                 floor_state,elv_state,elv_place_state = building.get_state()
                 floor_state,elv_state,elv_place_state = state_preprocessing(args,device,floor_state,elv_state,elv_place_state)
             else:
