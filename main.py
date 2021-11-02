@@ -22,6 +22,7 @@ else:
     device = 'cpu'
 
 def main():
+    epoch_s = time.time()
     global args
     parser = argparse.ArgumentParser('parameters')
     parser.add_argument('--test', type=bool, default=False, help="True if test, False if train (default: False)")
@@ -133,6 +134,9 @@ def main():
 
         if epoch%args.print_interval==0 and epoch!=0:
             print("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)))
+            epoch_e = time.time()
+            secs = epoch_e-epoch_s
+            print(f"총 소요시간:\t{secs//60}분 {secs%60}초")
             score_lst = []
 
         if (epoch % args.save_interval == 0 )& (epoch != 0):
@@ -145,4 +149,8 @@ def main():
 
 
 if __name__ == '__main__':
+    s = time.time()
     main()
+    e = time.time()
+    secs = e-s
+    print(f"총 소요시간:\t{secs//60}분 {secs%60}초")
