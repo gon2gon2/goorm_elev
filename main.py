@@ -28,7 +28,7 @@ def main():
     parser.add_argument('--test', type=bool, default=False, help="True if test, False if train (default: False)")
     parser.add_argument('--epochs', type=int, default=1001, help='number of epochs, (default: 1001)')
     parser.add_argument('--lr_rate', type=float, default=0.0003, help='learning rate (default : 0.0003)')
-    parser.add_argument('--lift_num', type=int, default=2, help='number of elevators')
+    parser.add_argument('--lift_num', type=int, default=3, help='number of elevators')
     parser.add_argument('--T_horizon', type=int, default=2048, help='number of steps at once')
     parser.add_argument('--K_epoch', type=int, default=10, help='number of train at once')
     parser.add_argument('--minibatch_size', type=int, default=64, help='batch size')
