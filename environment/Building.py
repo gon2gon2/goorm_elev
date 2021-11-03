@@ -107,21 +107,21 @@ class Building(object):
                 elevator goes downstairs. 
                 '''
                 if e.curr_floor == 0 :
-                    penalty_lst.append(-1)
+                    penalty_lst.append(-10)
                 e.move_down()
             elif action[idx] == 1:
                 '''
                 elevator goes upstairs.
                 '''
                 if (e.max_floor-1) == (e.curr_floor):
-                    penalty_lst.append(-1)
+                    penalty_lst.append(-10)
                 e.move_up()
             elif action[idx] == 2:
                 '''
                 elevator loads passengers
                 '''
                 if len(self.floors_information[e.curr_floor]) == 0:
-                    penalty_lst.append(-1)
+                    penalty_lst.append(-10)
                 self.floors_information[e.curr_floor] = e.load_passengers(self.floors_information[e.curr_floor])
             elif action[idx] == 3:
                 '''
@@ -129,7 +129,7 @@ class Building(object):
                 '''
                 arrived_passengers_num = e.unload_passengers(self.floors_information[e.curr_floor])
                 if arrived_passengers_num == 0 :
-                    penalty_lst.append(-1)
+                    penalty_lst.append(-10)
                 arrived_passengers_num_lst.append(arrived_passengers_num)
 
         #reward = sum(arrived_passengers_num_lst) + sum(penalty_lst) - self.get_remain_all_passengers()
