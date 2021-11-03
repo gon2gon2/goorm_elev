@@ -2,7 +2,6 @@
 Z*
 .ipynb_checkpoints/
 __pycache__/
-model_weights/
 venv/
 runs/
 goorm.mainfest
