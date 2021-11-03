@@ -136,7 +136,7 @@ def main():
             print("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)), end=' ')
             epoch_e = time.time()
             secs = epoch_e-epoch_s
-            print(f"epoch 소요시간:\t{secs//60}분 {secs%60}초")
+            print(f"epoch 소요시간:\t{secs//60}분")
             score_lst = []
             epoch_s = time.time()
 
