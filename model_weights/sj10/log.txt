@@ -1,0 +1,64 @@
+python main.py --K_epoch 10 --dir sj10
+args.test :  False
+args.epochs :  1001
+args.lr_rate :  0.0003
+args.lift_num :  3
+args.building_height : 19
+args.max_people_in_floor :  20
+args.max_people_in_elevator : 20
+args.load_file :
+args.save_interval : 100
+args.print_interval : 20
+args.test_case :  False
+cuda on
+# of episode :20, avg score : -3010.0 epoch 소요시간:   2.0분 29.483839750289917초
+# of episode :40, avg score : -3010.0 epoch 소요시간:   2.0분 23.399036407470703초
+# of episode :60, avg score : -3010.0 epoch 소요시간:   2.0분 22.04206943511963초
+# of episode :80, avg score : -3010.0 epoch 소요시간:   2.0분 31.73354172706604초
+# of episode :100, avg score : -3010.0 epoch 소요시간:  2.0분 32.27183771133423초
+# of episode :120, avg score : -3010.0 epoch 소요시간:  2.0분 32.57694101333618초
+# of episode :140, avg score : -3010.0 epoch 소요시간:  2.0분 26.985018253326416초
+# of episode :160, avg score : -3010.0 epoch 소요시간:  2.0분 30.363576889038086초
+# of episode :180, avg score : -3010.0 epoch 소요시간:  2.0분 25.462684392929077초
+# of episode :200, avg score : -3010.0 epoch 소요시간:  2.0분 23.736178874969482초
+# of episode :220, avg score : -3010.0 epoch 소요시간:  2.0분 19.800271034240723초
+# of episode :240, avg score : -3010.0 epoch 소요시간:  2.0분 19.29035711288452초
+# of episode :260, avg score : -3010.0 epoch 소요시간:  2.0분 18.605711221694946초
+# of episode :280, avg score : -3010.0 epoch 소요시간:  2.0분 18.58232092857361초
+# of episode :300, avg score : -3010.0 epoch 소요시간:  2.0분 19.5445613861084초
+# of episode :320, avg score : -3010.0 epoch 소요시간:  2.0분 26.103851795196533초
+# of episode :340, avg score : -3010.0 epoch 소요시간:  2.0분 25.592275381088257초
+# of episode :360, avg score : -3010.0 epoch 소요시간:  2.0분 23.542994260787964초
+# of episode :380, avg score : -3010.0 epoch 소요시간:  2.0분 23.2281436920166초
+# of episode :400, avg score : -3010.0 epoch 소요시간:  2.0분 23.16101384162903초
+# of episode :420, avg score : -3010.0 epoch 소요시간:  2.0분 24.644142627716064초
+# of episode :440, avg score : -3010.0 epoch 소요시간:  2.0분 23.52820920944214초
+# of episode :460, avg score : -3010.0 epoch 소요시간:  2.0분 22.583384037017822초
+# of episode :480, avg score : -3010.0 epoch 소요시간:  2.0분 21.290480375289917초
+# of episode :500, avg score : -3010.0 epoch 소요시간:  2.0분 20.674261808395386초
+# of episode :520, avg score : -3010.0 epoch 소요시간:  2.0분 20.80606460571289초
+# of episode :540, avg score : -3010.0 epoch 소요시간:  2.0분 22.91228985786438초
+# of episode :560, avg score : -3010.0 epoch 소요시간:  2.0분 21.240386486053467초
+# of episode :580, avg score : -3010.0 epoch 소요시간:  2.0분 21.116828441619873초
+# of episode :600, avg score : -3010.0 epoch 소요시간:  2.0분 21.501260995864868초
+# of episode :620, avg score : -3010.0 epoch 소요시간:  2.0분 25.916802883148193초
+# of episode :640, avg score : -3010.0 epoch 소요시간:  2.0분 26.23548460006714초
+# of episode :660, avg score : -3010.0 epoch 소요시간:  2.0분 22.77554488182068초
+# of episode :680, avg score : -3010.0 epoch 소요시간:  2.0분 23.49534296989441초
+# of episode :700, avg score : -3010.0 epoch 소요시간:  2.0분 22.775838613510132초
+# of episode :720, avg score : -3010.0 epoch 소요시간:  2.0분 31.044166564941406초
+# of episode :740, avg score : -3010.0 epoch 소요시간:  2.0분 26.17806124687195초
+# of episode :760, avg score : -3010.0 epoch 소요시간:  2.0분 20.43324851989746초
+# of episode :780, avg score : -3010.0 epoch 소요시간:  2.0분 24.919517517089844초
+# of episode :800, avg score : -3010.0 epoch 소요시간:  2.0분 22.66670870780945초
+# of episode :820, avg score : -3010.0 epoch 소요시간:  2.0분 20.260422945022583초
+# of episode :840, avg score : -3010.0 epoch 소요시간:  2.0분 19.968961000442505초
+# of episode :860, avg score : -3010.0 epoch 소요시간:  2.0분 19.878486156463623초
+# of episode :880, avg score : -3010.0 epoch 소요시간:  2.0분 21.1031973361969초
+# of episode :900, avg score : -3010.0 epoch 소요시간:  2.0분 23.696290493011475초
+# of episode :920, avg score : -3010.0 epoch 소요시간:  2.0분 22.596960067749023초
+# of episode :940, avg score : -3010.0 epoch 소요시간:  2.0분 23.670348167419434초
+# of episode :960, avg score : -3010.0 epoch 소요시간:  2.0분 26.07830572128296초
+# of episode :980, avg score : -3010.0 epoch 소요시간:  2.0분 26.3577983379364초
+# of episode :1000, avg score : -3010.0 epoch 소요시간: 2.0분 27.411722421646118초
+총 소요시간:    119.0분 53.35780644416809초
