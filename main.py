@@ -31,7 +31,7 @@ def main():
     parser.add_argument('--lift_num', type=int, default=2, help='number of elevators')
     parser.add_argument('--T_horizon', type=int, default=2048, help='number of steps at once')
     parser.add_argument('--K_epoch', type=int, default=10, help='number of train at once')
-    parser.add_argument('--minibatch_size', type=int, default=256, help='batch size')
+    parser.add_argument('--minibatch_size', type=int, default=1024, help='batch size')
     parser.add_argument('--gamma', type=float, default=0.99, help='training gamma')
     parser.add_argument('--lmbda', type=float, default=0.95, help='training lmbda')
     parser.add_argument('--eps_clip', type=float, default=0.2, help='training eps_clip')
