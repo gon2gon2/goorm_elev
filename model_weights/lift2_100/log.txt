@@ -1,4 +1,4 @@
-rgs.test :  False
+args.test :  False
 args.epochs :  1001
 args.lr_rate :  0.0003
 args.lift_num :  2
