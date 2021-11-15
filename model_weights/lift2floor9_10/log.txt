@@ -1,0 +1,64 @@
+python3 main.py --lift_num 2 --building_height 9 --dir lift2floor9_10 --K_epoch 10
+args.test :  False
+args.epochs :  1001
+args.lr_rate :  0.0003
+args.lift_num :  2
+args.building_height : 9
+args.max_people_in_floor :  8
+args.max_people_in_elevator : 8
+args.load_file :  
+args.save_interval : 100
+args.print_interval : 20
+args.test_case :  False
+cuda on
+# of episode :20, avg score : -2974.3 epoch 소요시간:	3분 128초
+# of episode :40, avg score : -3001.4 epoch 소요시간:	6분 336초
+# of episode :60, avg score : -2993.3 epoch 소요시간:	6분 341초
+# of episode :80, avg score : -2994.7 epoch 소요시간:	6분 336초
+# of episode :100, avg score : -2977.5 epoch 소요시간:	6분 341초
+# of episode :120, avg score : -2978.5 epoch 소요시간:	6분 338초
+# of episode :140, avg score : -2966.4 epoch 소요시간:	6분 339초
+# of episode :160, avg score : -2900.9 epoch 소요시간:	6분 335초
+# of episode :180, avg score : -2974.9 epoch 소요시간:	6분 339초
+# of episode :200, avg score : -2964.9 epoch 소요시간:	6분 342초
+# of episode :220, avg score : -2906.4 epoch 소요시간:	6분 338초
+# of episode :240, avg score : -2954.0 epoch 소요시간:	6분 348초
+# of episode :260, avg score : -2899.4 epoch 소요시간:	6분 336초
+# of episode :280, avg score : -2806.3 epoch 소요시간:	6분 342초
+# of episode :300, avg score : -2855.0 epoch 소요시간:	6분 341초
+# of episode :320, avg score : -2761.6 epoch 소요시간:	6분 337초
+# of episode :340, avg score : -2664.6 epoch 소요시간:	6분 340초
+# of episode :360, avg score : -2574.9 epoch 소요시간:	6분 338초
+# of episode :380, avg score : -2448.7 epoch 소요시간:	6분 341초
+# of episode :400, avg score : -2327.9 epoch 소요시간:	6분 337초
+# of episode :420, avg score : -1938.9 epoch 소요시간:	6분 341초
+# of episode :440, avg score : -1781.0 epoch 소요시간:	6분 340초
+# of episode :460, avg score : -1796.3 epoch 소요시간:	6분 340초
+# of episode :480, avg score : -1627.7 epoch 소요시간:	6분 341초
+# of episode :500, avg score : -1614.0 epoch 소요시간:	6분 339초
+# of episode :520, avg score : -1370.5 epoch 소요시간:	6분 341초
+# of episode :540, avg score : -1327.3 epoch 소요시간:	6분 341초
+# of episode :560, avg score : -1190.6 epoch 소요시간:	6분 336초
+# of episode :580, avg score : -1166.7 epoch 소요시간:	6분 336초
+# of episode :600, avg score : -1095.5 epoch 소요시간:	6분 340초
+# of episode :620, avg score : -1037.0 epoch 소요시간:	6분 341초
+# of episode :640, avg score : -1065.2 epoch 소요시간:	6분 337초
+# of episode :660, avg score : -984.7 epoch 소요시간:	6분 340초
+# of episode :680, avg score : -892.3 epoch 소요시간:	6분 340초
+# of episode :700, avg score : -957.4 epoch 소요시간:	6분 345초
+# of episode :720, avg score : -877.1 epoch 소요시간:	6분 340초
+# of episode :740, avg score : -856.8 epoch 소요시간:	6분 341초
+# of episode :760, avg score : -803.6 epoch 소요시간:	6분 336초
+# of episode :780, avg score : -761.5 epoch 소요시간:	6분 340초
+# of episode :800, avg score : -811.2 epoch 소요시간:	6분 338초
+# of episode :820, avg score : -747.9 epoch 소요시간:	6분 341초
+# of episode :840, avg score : -760.5 epoch 소요시간:	6분 336초
+# of episode :860, avg score : -755.5 epoch 소요시간:	6분 336초
+# of episode :880, avg score : -744.1 epoch 소요시간:	6분 342초
+# of episode :900, avg score : -727.8 epoch 소요시간:	6분 336초
+# of episode :920, avg score : -723.1 epoch 소요시간:	6분 345초
+# of episode :940, avg score : -692.2 epoch 소요시간:	6분 338초
+# of episode :960, avg score : -679.3 epoch 소요시간:	6분 342초
+# of episode :980, avg score : -682.1 epoch 소요시간:	6분 336초
+# of episode :1000, avg score : -653.4 epoch 소요시간:	6분 342초
+총 소요시간:	329.0분 46.49797248840332초
