@@ -154,7 +154,10 @@ def main():
             score_lst = []
             epoch_s = time.time()
             with open(f"./model_weights/{args.dir}/log.txt", 'a') as f:
-                f.write("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)))
+                try:
+                    f.write("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)))
+                except:
+                    pass
 
         if (epoch % args.save_interval == 0 )& (epoch != 0):
             if args.dir:
