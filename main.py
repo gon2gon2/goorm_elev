@@ -47,7 +47,7 @@ def main():
     parser.add_argument("--test_case", type=bool, default = False, help = '')
     parser.add_argument("--dir", type=str, default = False, help = '')
     args = parser.parse_args()
-    with open("./model_weights/{args.dir}/log.txt", 'a') as f:
+    with open(f"./model_weights/{args.dir}/log.txt", 'a') as f:
         f.write('args.test : ',args.test)
         f.write('args.epochs : ',args.epochs)
         f.write('args.lr_rate : ',args.lr_rate)
@@ -153,7 +153,7 @@ def main():
             print(f"epoch 소요시간:\t{int(secs//60)}분 {int(secs - 60)}초")
             score_lst = []
             epoch_s = time.time()
-            with open("./model_weights/{args.dir}/log.txt", 'a') as f:
+            with open(f"./model_weights/{args.dir}/log.txt", 'a') as f:
                 f.write("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)))
 
         if (epoch % args.save_interval == 0 )& (epoch != 0):
