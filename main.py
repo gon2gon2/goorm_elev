@@ -22,11 +22,12 @@ else:
     device = 'cpu'
 
 def main():
+    
     epoch_s = time.time()
     global args
     parser = argparse.ArgumentParser('parameters')
     parser.add_argument('--test', type=bool, default=False, help="True if test, False if train (default: False)")
-    parser.add_argument('--epochs', type=int, default=1001, help='number of epochs, (default: 1001)')
+    parser.add_argument('--epochs', type=int, default=10001, help='number of epochs, (default: 1001)')
     parser.add_argument('--lr_rate', type=float, default=0.0003, help='learning rate (default : 0.0003)')
     parser.add_argument('--lift_num', type=int, default=2, help='number of elevators')
     parser.add_argument('--T_horizon', type=int, default=2048, help='number of steps at once')
@@ -41,11 +42,24 @@ def main():
     parser.add_argument('--max_people_in_elevator', type=int, default=8, help='maximum people in one elevator')
     parser.add_argument('--add_people_prob', type=float, default=0.8, help='add people probability')
     parser.add_argument("--load_file", type=str, default = '', help = 'load initial parameters')
-    parser.add_argument("--save_interval", type=int, default = 100, help = 'save interval')
-    parser.add_argument("--print_interval", type=int, default = 20, help = 'print interval')
+    parser.add_argument("--save_interval", type=int, default = 50, help = 'save interval')
+    parser.add_argument("--print_interval", type=int, default = 50, help = 'print interval')
     parser.add_argument("--test_case", type=bool, default = False, help = '')
     parser.add_argument("--dir", type=str, default = False, help = '')
     args = parser.parse_args()
+    with open("./model_weights/{args.dir}/log.txt", 'a') as f:
+        f.write('args.test : ',args.test)
+        f.write('args.epochs : ',args.epochs)
+        f.write('args.lr_rate : ',args.lr_rate)
+        f.write('args.lift_num : ',args.lift_num)
+        f.write('args.building_height :',args.building_height)
+        f.write('args.max_people_in_floor : ',args.max_people_in_floor )
+        f.write('args.max_people_in_elevator :',args.max_people_in_elevator)
+        f.write('args.load_file : ',args.load_file)
+        f.write('args.save_interval :',args.save_interval)
+        f.write('args.print_interval :',args.print_interval)
+        f.write('args.test_case : ',args.test_case)
+        
     print('args.test : ', args.test)
     print('args.epochs : ', args.epochs)
     print('args.lr_rate : ', args.lr_rate)
@@ -139,6 +153,8 @@ def main():
             print(f"epoch 소요시간:\t{int(secs//60)}분 {int(secs - 60)}초")
             score_lst = []
             epoch_s = time.time()
+            with open("./model_weights/{args.dir}/log.txt", 'a') as f:
+                f.write("# of episode :{}, avg score : {:.1f}".format(epoch, sum(score_lst)/len(score_lst)))
 
         if (epoch % args.save_interval == 0 )& (epoch != 0):
             if args.dir:

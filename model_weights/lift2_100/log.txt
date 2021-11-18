@@ -28,7 +28,7 @@ cuda on
 # of episode :320, avg score : -595.1 epoch 소요시간:	4분 189초
 # of episode :340, avg score : -597.1 epoch 소요시간:	4분 185초
 # of episode :360, avg score : -526.1 epoch 소요시간:	4분 187초
-^[[A# of episode :380, avg score : -500.6 epoch 소요시간:	4분 187초
+# of episode :380, avg score : -500.6 epoch 소요시간:	4분 187초
 # of episode :400, avg score : -479.5 epoch 소요시간:	4분 194초
 # of episode :420, avg score : -459.0 epoch 소요시간:	4분 187초
 # of episode :440, avg score : -442.1 epoch 소요시간:	4분 188초
