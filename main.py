@@ -47,18 +47,6 @@ def main():
     parser.add_argument("--test_case", type=bool, default = False, help = '')
     parser.add_argument("--dir", type=str, default = False, help = '')
     args = parser.parse_args()
-    with open(f"./model_weights/{args.dir}/log.txt", 'a') as f:
-        f.write(f'args.test : {args.test}')
-        f.write(f'args.epochs : {args.epochs}')
-        f.write(f'args.lr_rate : {args.lr_rate}')
-        f.write(f'args.lift_num : {args.lift_num}')
-        f.write(f'args.building_height :{args.building_height}')
-        f.write(f'args.max_people_in_floor : {args.max_people_in_floor }')
-        f.write(f'args.max_people_in_elevator :{args.max_people_in_elevator}')
-        f.write(f'args.load_file : {args.load_file}')
-        f.write(f'args.save_interval :{args.save_interval}')
-        f.write(f'args.print_interval :{args.print_interval}')
-        f.write(f'args.test_case : {args.test_case}')
         
     print('args.test : ', args.test)
     print('args.epochs : ', args.epochs)
