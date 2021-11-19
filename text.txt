@@ -1,0 +1,1 @@
+python3 main.py --dir lift6 --save_interval --lift_num 6

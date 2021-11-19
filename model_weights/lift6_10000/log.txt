@@ -1,0 +1,34 @@
+python3 main.py --dir lift6 --save_interval 500 --lift_num 6 --print_interval 500
+args.test :  False
+args.epochs :  10001
+args.lr_rate :  0.0003
+args.lift_num :  6
+args.building_height : 8
+args.max_people_in_floor :  8
+args.max_people_in_elevator : 8
+args.load_file :
+args.save_interval : 500
+args.print_interval : 500
+args.test_case :  False
+cuda on
+# of episode :500, avg score : -1221.3 epoch 소요시간:    41분 2433초
+# of episode :1000, avg score : -478.1 epoch 소요시간:    41분 2441초
+# of episode :1500, avg score : -296.1 epoch 소요시간:    42분 2468초
+# of episode :2000, avg score : -234.2 epoch 소요시간:    42분 2501초
+# of episode :2500, avg score : -211.7 epoch 소요시간:    42분 2507초
+# of episode :3000, avg score : -198.7 epoch 소요시간:    42분 2498초
+# of episode :3500, avg score : -189.2 epoch 소요시간:    42분 2509초
+# of episode :4000, avg score : -184.8 epoch 소요시간:    42분 2508초
+# of episode :4500, avg score : -178.6 epoch 소요시간:    42분 2499초
+# of episode :5000, avg score : -176.5 epoch 소요시간:    42분 2504초
+# of episode :5500, avg score : -170.0 epoch 소요시간:    43분 2520초
+# of episode :6000, avg score : -163.9 epoch 소요시간:    42분 2503초
+# of episode :6500, avg score : -162.7 epoch 소요시간:    42분 2508초
+# of episode :7000, avg score : -159.6 epoch 소요시간:    42분 2494초
+# of episode :7500, avg score : -156.6 epoch 소요시간:    42분 2510초
+# of episode :8000, avg score : -152.8 epoch 소요시간:    42분 2505초
+# of episode :8500, avg score : -150.4 epoch 소요시간:    42분 2498초
+# of episode :9000, avg score : -148.4 epoch 소요시간:    42분 2497초
+# of episode :9500, avg score : -148.9 epoch 소요시간:    42분 2500초
+# of episode :10000, avg score : -147.7 epoch 소요시간:    42분 2507초
+총 소요시간:    852.0분 0.022912979125976562초

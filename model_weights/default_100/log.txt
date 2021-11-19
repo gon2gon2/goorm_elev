@@ -1,0 +1,4 @@
+args.lift_num :  1
+args.building_height : 8
+args.max_people_in_floor :  8
+args.max_people_in_elevator : 8
