@@ -84,6 +84,7 @@ class Building(object):
 
     def get_passengers(self, prob : float, passenger_max_num : int = 6):
         f = open('test_case_6.txt', mode='r', encoding='utf-8')
+        # f = open('test_case_1.txt', mode='r')
         lines = f.readlines()
         passenger_num = int(lines.pop(0).strip())  # test_case의 승객 수 원본
         
